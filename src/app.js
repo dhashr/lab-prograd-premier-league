@@ -106,10 +106,8 @@ function filterByAwardxTimes(awardName, noOfTimes){
   let noofawards = [];
   let playeraward = [];
   let count = 0;
-  for(let i = 0;i<players.length;i++)
-  {
-    for(let j = 0;j<players[i].awards.length;j++)
-    {
+  for(let i = 0;i<players.length;i++) {
+    for(let j = 0;j<players[i].awards.length;j++){
      if(players[i].awards[j].name == awardName){
       count++;
      } 
@@ -118,8 +116,7 @@ function filterByAwardxTimes(awardName, noOfTimes){
    count=0;
   }
  for(let i = 0;i<players.length;i++){
-  if(noofawards[i] == noOfTimes)
-  {
+  if(noofawards[i] == noOfTimes){
     playeraward.push(players[i]);
   }
  }
